@@ -6,8 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Real Estate MySQL PHP Site display test</title>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 <link href="style.css" rel="stylesheet" >
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
 </head>
 <body>
 <div class="container">
@@ -19,7 +20,7 @@ while ($row = $resultImage -> fetch_assoc())
 {
     ?>
 
-<div class="picture"><img src="agent_images/<?php echo $row['image']?>"></i></div>
+<div><img src="agent_images/<?php echo $row['image']?>"></i></div>
 <div class="name"><h3><?php echo $row['name'];?></h3></div>
 
 <?php

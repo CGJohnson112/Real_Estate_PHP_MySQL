@@ -7,7 +7,7 @@ if ($mysqli -> connect_errno) {
   exit();
 }
 
-$queryNum = 3;
+$queryNum = 4;
 //make one query for one image of the agent you want to show
 $sql ="SELECT agents.name, agents.image
 FROM agents WHERE agents.agent_id = $queryNum";
