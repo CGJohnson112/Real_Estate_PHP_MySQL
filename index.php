@@ -46,10 +46,6 @@ while ($row = $result -> fetch_assoc())
       <td><?php echo $row['cost'];?></td>
    
     </tr>
-   
- 
-
-
 <?php
 }
 ?>
