@@ -14,44 +14,11 @@
 <div class="container">
 <?php include 'db.php'?>
 <img src="home_images/re_logo.png" alt="">
-<h1>Here is your real estate agent and their homes for sale!</h1>
-
-<?php
-while ($row = $resultImage -> fetch_assoc()) 
-{
-    ?>
-
-<div><img src="agent_images/<?php echo $row['image']?>"></i></div>
-<div class="name"><h3><?php echo $row['name'];?></h3></div>
-
-<?php
-}
-?>
-<table class="table table-dark table-striped">
-  <thead>
-    <tr>
-    
-      <th scope="col">Address</th>
-      <th scope="col">Cost</th>
-    </tr>
-  </thead>
-  <tbody>
-<?php
-
-while ($row = $result -> fetch_assoc())
-{
-  ?>
-
-    <tr>
-      <td><a href ="home_page.php"><?php echo $row['address'];?></a></td>
-      <td><?php echo $row['cost'];?></td>
-    </tr>
-<?php
-}
-?>
-
-</tbody>
-</table>
+<h1>This is the house of your dreams you just selected!</h1>
+<h3>10200 Capital Sandwich Street <span><b>$250,000</b></span></h3>
+<h4>Description</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nihil dolorum expedita explicabo ab, unde, nobis eligendi modi architecto molestias harum, labore nisi iure. Dolores hic assumenda corrupti animi perferendis cum deleniti dicta velit, quod neque sed nesciunt, dolor optio minima totam natus, accusantium voluptate labore tempore quam laboriosam praesentium officia! Quis, eaque totam eligendi vitae obcaecati voluptas veniam. Beatae iusto ratione nisi inventore consequuntur!</p>
+<img src="home_images/home_img_1.jpg"/>
 </div>
 <!-- jQuery library -->
 <!-- Latest compiled JavaScript -->

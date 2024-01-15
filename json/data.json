@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "agent_id": 1,
+        "name": "Barry Nichols",
+        "image": "image_1.jpg",
+        "address": "5510 Capital Lane",
+        "description": "Lorem ipsum and stuff",
+        "cost": 25000,
+        "date_posted": "2024-01-09"
+    },
+    {
+        "id": 2,
+        "agent_id": 2,
+        "name": "Ralph Nader",
+        "image": "image_2.jpg",
+        "address": "10001 Boston Avenue",
+        "description": "Lorem ipsum is for real ",
+        "cost": 500000,
+        "date_posted": "2023-11-14"
+    },
+    {
+        "id": 2,
+        "agent_id": 2,
+        "name": "Ralph Nader",
+        "image": "image_2.jpg",
+        "address": "20 Jack Nicholson Street",
+        "description": "It's a gasssss",
+        "cost": 70000,
+        "date_posted": "2024-01-11"
+    },
+    {
+        "id": 2,
+        "agent_id": 2,
+        "name": "Ralph Nader",
+        "image": "image_2.jpg",
+        "address": "3000 Taco Truffle Street",
+        "description": "Basingas",
+        "cost": 52500,
+        "date_posted": "2024-01-08"
+    },
+    {
+        "id": 3,
+        "agent_id": 3,
+        "name": "Karrie Sullivan",
+        "image": "image_3.jpg",
+        "address": "10200 Capital Sandwich Street",
+        "description": "This is a charmed house on August Terrace",
+        "cost": 125000,
+        "date_posted": "2024-01-03"
+    },
+    {
+        "id": 4,
+        "agent_id": 4,
+        "name": "Bob Saget",
+        "image": "image_4.jpg",
+        "address": "5500 Calabassas Avenue",
+        "description": "Trash",
+        "cost": 350000,
+        "date_posted": "2023-09-03"
+    },
+    {
+        "id": 4,
+        "agent_id": 4,
+        "name": "Bob Saget",
+        "image": "image_4.jpg",
+        "address": "3000 Sagetville Street",
+        "description": "Street is empty",
+        "cost": 10000000,
+        "date_posted": "2024-01-02"
+    },
+    {
+        "id": 3,
+        "agent_id": 3,
+        "name": "Karrie Sullivan",
+        "image": "image_3.jpg",
+        "address": "5100 Kaneda Boulevard",
+        "description": "Akiraaaaaaa!!!!!",
+        "cost": 75000,
+        "date_posted": "2024-01-22"
+    }
+]
