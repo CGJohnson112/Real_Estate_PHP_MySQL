@@ -54,7 +54,7 @@ while ($row = $result -> fetch_assoc())
 
     <tr>
       <td><a href ="home_page.php"><?php echo $row['address'];?></a></td>
-      <td><?php echo $row['cost'];?></td>
+      <td> $ <?php echo number_format($row['cost']);?></td>
     </tr>
 <?php
 }
