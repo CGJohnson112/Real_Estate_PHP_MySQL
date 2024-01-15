@@ -11,8 +11,18 @@
 
 </head>
 <body>
-<div class="container">
+
 <?php include 'db.php'?>
+<div class="container">
+<p>Today's total sales:<span>$ <b><?php echo $resultTotSales; ?></span></b></p>
+
+
+</b>
+<p>Today's average sales: <span>$ <b><?php echo $resultAvgSales; ?></span></b> </p></b>
+
+
+<p>Today's total Agent sales: <span>$ <b><?php echo $resultIndividSalesTotal; ?></span></b> </p></b>
+<p>Today's average Agent sales: <span>$ <b><?php echo $resultIndividSalesAvg; ?></span></b> </p></b>
 <img src="home_images/re_logo.png" alt="">
 <h1>Here is your real estate agent and their homes for sale!</h1>
 
