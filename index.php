@@ -20,12 +20,17 @@
 </b>
 <p>Today's average sales: <span> $ <b><?php echo number_format($resultAvgSales); ?></span></b> </p></b>
 
+</b>
+<p>Today's median sales: <span> $ <b><?php echo number_format($resultMedSales);?></span></b> </p></b>
 
+
+<h1>Find your Home Today!</h1>
+<hr>
 <p>Today's total Agent sales: <span> $ <b><?php echo number_format($resultIndividSalesTotal); ?></span></b> </p></b>
 <p>Today's average Agent sales: <span> $ <b><?php echo number_format($resultIndividSalesAvg); ?></span></b> </p></b>
-<img src="home_images/re_logo.png" alt="">
-<h1>Here is your real estate agent and their homes for sale!</h1>
 
+<p>Today's Agent median sales: <span> $ <b><?php echo number_format($resultIndividMedSales);?></span></b> </p></b>
+<img src="home_images/re_logo.png" alt="">
 <?php
 while ($row = $resultImage -> fetch_assoc()) 
 {

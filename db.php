@@ -24,7 +24,7 @@ WHERE agents.agent_id = homes.agent_id";
     file_put_contents($file_name, $encoded_data);
 
 //used to select the number of agent you want to pull up 
-$queryNum = 3;
+$queryNum = 2;
 
 
 //make one query for one image of the agent you want to show
@@ -65,6 +65,24 @@ $sql6 = mysqli_query($mysqli, "SELECT ROUND (AVG(homes.cost), 2) as cost FROM ho
 $resultAvgSales = mysqli_fetch_assoc($sql6);
 $resultAvgSales = $resultAvgSales['cost'];
 
+//make 7th query for median sales of entire comnapny
+$sql7 = mysqli_query($mysqli, 
+"SELECT SUM(homes.cost) / 2 as cost from homes");
+//converts data to string by fetch
+$resultMedSales = mysqli_fetch_assoc($sql7);
+$resultMedSales = $resultMedSales['cost'];
+
+
+//make 8th query for median sales of individual
+$sql8 = mysqli_query($mysqli, 
+"SELECT SUM(homes.cost) / 2 as cost from homes,agents WHERE agents.agent_id = homes.agent_id AND agents.agent_id = $queryNum");
+//converts data to string by fetch
+$resultIndividMedSales = mysqli_fetch_assoc($sql8);
+$resultIndividMedSales = $resultIndividMedSales['cost'];
+//var_dump($resultIndividMedSales);
+
 $mysqli->close();
 
 ?>
+
+
