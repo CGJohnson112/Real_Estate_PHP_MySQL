@@ -50,9 +50,9 @@
         "date_posted": "2024-01-03"
     },
     {
-        "id": 4,
-        "agent_id": 4,
-        "name": "Bob Saget",
+        "id": 5,
+        "agent_id": 5,
+        "name": "Bob Hamilton",
         "image": "image_4.jpg",
         "address": "5500 Calabassas Avenue",
         "description": "Trash",
@@ -63,7 +63,7 @@
         "id": 4,
         "agent_id": 4,
         "name": "Bob Saget",
-        "image": "image_4.jpg",
+        "image": "no_img.jpg",
         "address": "3000 Sagetville Street",
         "description": "Street is empty",
         "cost": 10000000,
@@ -78,5 +78,25 @@
         "description": "Akiraaaaaaa!!!!!",
         "cost": 75000,
         "date_posted": "2024-01-22"
+    },
+    {
+        "id": 3,
+        "agent_id": 3,
+        "name": "Karrie Sullivan",
+        "image": "image_3.jpg",
+        "address": "20400 Bostonian Drive",
+        "description": "Top house. The best",
+        "cost": 559000,
+        "date_posted": "2024-01-16"
+    },
+    {
+        "id": 2,
+        "agent_id": 2,
+        "name": "Ralph Nader",
+        "image": "image_2.jpg",
+        "address": "3529 Donald Trump Lane",
+        "description": "It'shuuuuuge",
+        "cost": 350000,
+        "date_posted": "2024-01-03"
     }
 ]

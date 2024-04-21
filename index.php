@@ -36,7 +36,8 @@ while ($row = $resultImage -> fetch_assoc())
 {
     ?>
 
-<div><img src="agent_images/<?php echo $row['image']?>"></i></div>
+<!--'onerror' shows 'photo not available' image if agent doesn't have a photo in the DB-->
+<div><img src="agent_images/<?php echo $row['image']?>" onerror="this.onerror=null;this.src='agent_images/no_img.jpg'"></i></div>
 <div class="name"><h3><?php echo $row['name'];?></h3></div>
 
 <?php
@@ -53,12 +54,14 @@ while ($row = $resultImage -> fetch_assoc())
   <tbody>
 <?php
 
-while ($row = $result -> fetch_assoc())
+foreach ($result as $row)
 {
   ?>
 
     <tr>
-      <td><a href ="home_page.php"><?php echo $row['address'];?></a></td>
+
+    <!--working on getting the link to display this individual property on a separate page-->
+      <td><a href ="./home_page.php?id=<?php echo $row['id'];?>"><?php echo $row['address'];?> <?php echo $row['id'];?> </a></td>
       <td> $ <?php echo number_format($row['cost']);?></td>
     </tr>
 <?php
