@@ -63,7 +63,7 @@
         "id": 4,
         "agent_id": 4,
         "name": "Bob Saget",
-        "image": "no_img.jpg",
+        "image": "image_5.jpg",
         "address": "3000 Sagetville Street",
         "description": "Street is empty",
         "cost": 10000000,
@@ -98,5 +98,15 @@
         "description": "It'shuuuuuge",
         "cost": 350000,
         "date_posted": "2024-01-03"
+    },
+    {
+        "id": 4,
+        "agent_id": 4,
+        "name": "Bob Saget",
+        "image": "image_5.jpg",
+        "address": "5500 Cashew Street",
+        "description": "The place is wondrously big and small at the same time. ",
+        "cost": 250000,
+        "date_posted": "2024-04-02"
     }
 ]

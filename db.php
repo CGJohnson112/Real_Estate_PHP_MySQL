@@ -24,7 +24,11 @@ WHERE agents.agent_id = homes.agent_id";
     file_put_contents($file_name, $encoded_data);
 
 //used to select the number of agent you want to pull up 
-$queryNum = 1;
+$queryNum = 2;
+
+//make query for all the agentsfor index select menu
+$sqll = "SELECT * FROM agents";
+$printAgents = $mysqli->query($sqll);
 
 //make one query for one image of the agent you want to show
 $sql ="SELECT agents.name, agents.image
