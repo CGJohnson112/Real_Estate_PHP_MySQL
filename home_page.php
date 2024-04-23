@@ -28,11 +28,13 @@ while ($row = $homeResult -> fetch_assoc())
 <h4>Description:</h4>
 <p><?php echo $row['description'];?></p>
 <img src="./home_images/<?php echo $row['image'];?>"/>
+<a href="./index.php"><button type="submit" class="btn btn-primary">Back to REALTOR select screen</button></a>
 </div>
 
 <?php
 }
 ?>
+
 
 <!-- jQuery library -->
 <!-- Latest compiled JavaScript -->

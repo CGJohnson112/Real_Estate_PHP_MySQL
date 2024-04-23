@@ -17,7 +17,6 @@
 <div class="container">
 <p>Today's total sales:<span> $ <b><?php echo number_format($resultTotSales) ; ?></span></b></p>
 
-
 </b>
 <p>Today's average sales: <span> $ <b><?php echo number_format($resultAvgSales); ?></span></b> </p></b>
 
