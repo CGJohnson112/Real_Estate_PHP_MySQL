@@ -16,23 +16,23 @@
 <?php include 'db.php'?>
 <div class="container">
     <h2>Select your REALTOR</h2>
-<form action="">
-<select class="form-select" aria-label="Default select example">
+<form action="./realtor_select.php" method="POST">
+<select class="form-select" name="pid">
 
 <?php
 while ($row = $printAgents -> fetch_assoc()) 
 {
     ?>
-        <option></option>
-            <option value="<?php echo $row['id'];?>"><?php echo $row['name'];?></option>
-            
-
+        
+            <option type="text" name="pid" value=<?php echo $row['id'];?>><?php echo $row['name'];?></option>
+        
             <?php
 }
 ?>
+
 </select>
     
-
+<input type="submit" name="submit" value="submit" class="btn btn-primary">Select your Realtor</input>
 </form>
     
 

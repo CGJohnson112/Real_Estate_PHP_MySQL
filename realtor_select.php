@@ -13,6 +13,7 @@
 <body>
 
 <?php include 'db.php'?>
+
 <div class="container">
 <p>Today's total sales:<span> $ <b><?php echo number_format($resultTotSales) ; ?></span></b></p>
 
@@ -60,7 +61,7 @@ foreach ($result as $row)
 
     <tr>
 
-    <!--working on getting the link to display this individual property on a separate page-->
+    <!--link to display this individual property on a separate page-->
       <td><a href ="./home_page.php?id=<?php echo $row['id'];?>"><?php echo $row['address'];?> <?php echo $row['id'];?> </a></td>
       <td> $ <?php echo number_format($row['cost']);?></td>
     </tr>

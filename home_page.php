@@ -20,7 +20,6 @@
 <h1>This is the house of your dreams you just selected!</h1>
 <?php
 
-
 while ($row = $homeResult -> fetch_assoc())
 {
   ?>
