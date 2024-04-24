@@ -18,13 +18,16 @@
 
 <img src="home_images/re_logo.png" alt="">
 <h1>This is the house of your dreams you just selected!</h1>
+<hr/>
 <?php
+
 
 while ($row = $homeResult -> fetch_assoc())
 {
   ?>
-<h2>Id # is <?php echo $row['id']; ?></h2>
-<h3><?php echo $row['address'];?><br><span><b>$<?php echo $row['cost'];?></b></span></h3>
+<!--pretty print date from phpMyAdmin to more readable date format-->
+<h5>Date Posted: <?php echo date('F d Y', strtotime($row['date_posted']));?></h5>
+<h3><?php echo $row['address'];?><br><span><b>$<?php echo number_format($row['cost']);?></b></span></h3>
 <h4>Description:</h4>
 <p><?php echo $row['description'];?></p>
 <img src="./home_images/<?php echo $row['image'];?>"/>
